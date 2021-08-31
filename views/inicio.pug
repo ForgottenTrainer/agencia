@@ -1,0 +1,31 @@
+extends ./layout/index
+
+block slider 
+    .slider
+        h1 Rio de janeiro 
+        em Explora cosas nuevas
+
+block contenido 
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5
+            .col-md-6 
+                p Phasellus vitae laoreet metus, eu malesuada tortor. Vestibulum nec ipsum ultrices, porta nisl ullamcorper, iaculis quam. Nulla non metus vitae metus pharetra imperdiet non at lorem. Cras ac convallis mi. 
+                p Phasellus vitae laoreet metus, eu malesuada tortor. Vestibulum nec ipsum ultrices, porta nisl ullamcorper, iaculis quam. Nulla non metus vitae metus pharetra imperdiet non at lorem. Cras ac convallis mi. Vestibulum ullamcorper maximus ipsum, ac laoreet justo. 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+            
+        include ./layout/bloques_viajes
+    
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Abril de 2022 - 28 de marzo del 2022
+                        p.precio $2,500 USD
+    .container 
+        h2.mt-5.text-center Testimoniales
+                include ./layout/bloque_testimoniales
